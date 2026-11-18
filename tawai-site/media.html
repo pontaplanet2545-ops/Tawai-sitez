@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>สื่อเผยแพร่ | ตาไว</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="media">
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero"><div class="wrap">
+    <p class="crumb"><a href="index.html">หน้าแรก</a> / <a href="media.html">สื่อเผยแพร่</a><span id="crumb-cat"></span></p>
+    <h1 id="page-title">สื่อเผยแพร่</h1>
+    <p class="lead" id="page-desc" style="max-width:640px"></p>
+  </div></section>
+  <div class="wrap m-layout">
+    <aside class="m-side" id="side" aria-label="ตัวกรองหมวด"></aside>
+    <div class="m-main">
+      <div class="m-tools">
+        <div class="m-search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A5D75" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><label for="q" class="sr">ค้นหาสื่อ</label><input id="q" type="search" placeholder="ค้นหาชื่อเรื่อง"></div>
+        <div class="tabs" id="types" role="group" aria-label="ประเภทสื่อ"></div>
+      </div>
+      <p id="count" aria-live="polite"></p>
+      <div class="grid" id="mgrid"></div>
+      <div id="empty" hidden><b>ยังไม่มีสื่อที่ตรงกับตัวกรองนี้</b><button class="btn btn-blue" id="reset" type="button">ล้างตัวกรอง</button></div>
+    </div>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/layout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/media-data.js"></script>
+<script src="assets/js/media.js"></script>
+</body>
+</html>
